@@ -1,9 +1,12 @@
 import { Routes } from '@angular/router';
 import { Formulario } from './formulario/formulario';
 import { Pipes } from './pipes/pipes';
+import { ApiReniec } from './api-reniec/api-reniec';
+
 
 
 export const routes: Routes = [
     { path: 'formulario', component: Formulario },
-    { path: 'pipes', component: Pipes }
+    { path: 'pipes', component: Pipes },
+    { path: 'reniec', component: ApiReniec }
 ];

@@ -1,0 +1,25 @@
+<form action="was-validated">
+    <div class="input-group">
+        <span>Ingresar dni: </span>
+        <input (ngModel) = "buscado" type="text" id="txtDni" name="txtName" class="form-control">
+        <button class="btn btn-success" type="button" (click) = "buscar()" >
+            @if (buscando) {
+                Buscando
+            }@else {
+                Buscar
+            }
+        </button>
+    </div>
+    <div class="class form-floating">
+        <label for="txtApe">Apellidos: </label>
+        <input type="text" (ngModel) = "datos.ape" id="txtApe" name="txtApe" class="form-control">
+    </div>
+    <div class="class form-floating">
+        <label for="txtNom">Nombre: </label>
+        <input type="text" (ngModel) = "datos.nom" id="txtNom" name="txtNom" class="form-control">
+    </div>
+    <div class="class form-floating">
+        <label for="txtSede">Sede: </label>
+        <input type="text" (ngModel) = "datos.sede" id="txtSede" name="txtSede" class="form-control">
+    </div>
+</form>
